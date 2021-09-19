@@ -1,0 +1,37 @@
+.review {
+  border-top: 1px solid var(--color-grey-900);
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: var(--spacing-l);
+  margin-bottom: var(--spacing-l);
+}
+
+.quote {
+  font-family: Teko;
+  font-size: 36px;
+  color: var(--color-black-200);
+  line-height: 46px;
+  display: block;
+  margin-bottom: var(--spacing-s);
+}
+
+.quote::before {
+  content: open-quote;
+}
+
+.quote::after {
+  content: close-quote;
+}
+
+.reviewer {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: var(--color-black-200);
+  text-align: left;
+  line-height: 30px;
+}

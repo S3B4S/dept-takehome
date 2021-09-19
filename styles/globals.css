@@ -2,11 +2,15 @@
   --spacing-xs: 20px;
   --spacing-s: 30px;
   --spacing-l: 80px;
+  
   --color-black-100: #0E0E0E;
   --color-black-200: #272727;
-  --color-grey-900: #DDDDDD;
+  
   --color-grey-700: #939393;
+  --color-grey-900: #DDDDDD;
+  
   --color-blue-500: #1A18F7;
+  --color-blue-900: #F3F6F6;
 }
 
 html,

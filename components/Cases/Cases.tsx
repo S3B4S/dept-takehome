@@ -1,10 +1,11 @@
-import { ClientCase, Review } from "../../@types"
+import { Review } from ".."
+import { ClientCase, ClientReview } from "../../@types"
 import Case from "./Case"
 import styles from "./Cases.module.css"
 
 interface CasesProps {
   cases: ClientCase[]
-  review: Review
+  review: ClientReview
 }
 
 // Shows 2 cases side by side
@@ -44,7 +45,7 @@ const Cases = ({ cases, review }: CasesProps) => {
       <HighlightedCaseRow cases={cases.slice(9,12)} reverse />
       <RegularRow cases={cases.slice(12,14)} />
       <RegularRow cases={cases.slice(14,16)} />
-      {review.review}
+      <Review review={review}/>
       <RegularRow cases={cases.slice(16,18)} />
     </section>
   )

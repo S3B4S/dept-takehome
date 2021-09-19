@@ -10,7 +10,7 @@ export interface Client extends APIData {
   logo: string
 }
 
-export interface Review extends APIData {
+export interface ClientReview extends APIData {
   reviewer: string
   role: string
   company: string

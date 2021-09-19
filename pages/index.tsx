@@ -3,12 +3,12 @@ import Head from "next/head"
 import { getCases, getClients, getReviews } from "../utils/api"
 import { Cases, Clients, ContactForm, Footer, Hero } from "../components"
 import styles from "../styles/Home.module.css"
-import { APIData, ClientCase, Client, Review } from "../@types"
+import { APIData, ClientCase, Client, ClientReview } from "../@types"
 
 interface HomeProps {
   cases: ClientCase[]
   clients: Client[]
-  review: Review
+  review: ClientReview
 }
 
 const Home: NextPage<HomeProps> = ({ cases, clients, review }) => {
