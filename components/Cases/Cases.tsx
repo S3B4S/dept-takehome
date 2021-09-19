@@ -1,6 +1,6 @@
-import { ClientCase, Review } from "../@types"
+import { ClientCase, Review } from "../../@types"
 import Case from "./Case"
-import styles from "../styles/Cases.module.css"
+import styles from "./Cases.module.css"
 
 interface CasesProps {
   cases: ClientCase[]

@@ -1,6 +1,6 @@
-import { ClientCase } from "../@types"
+import { ClientCase } from "../../@types"
 import Image from "next/image"
-import styles from "../styles/Case.module.css"
+import styles from "./Case.module.css"
 import { HTMLAttributes } from "react"
 
 const Case = ({ clientCase, showCover = true, className = "" }: { clientCase: ClientCase, showCover?: boolean } & HTMLAttributes<HTMLDivElement>) => {
