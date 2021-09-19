@@ -1,0 +1,61 @@
+.hero {
+  margin: var(--spacing-xs);
+  background: url("../public/images/header.jpg") no-repeat;
+  background-size: 100%;
+  font-family: "teko";
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+.nav {
+  border-bottom: 1px var(--color-black) solid;
+  margin-top: var(--spacing-s);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
+
+.callout {
+  font-size: 24rem;
+  font-family: "teko";
+  text-transform: uppercase;
+}
+
+.navItems {
+  margin-bottom: -10px;
+}
+
+.menuLabel {
+  text-transform: uppercase;
+  margin-right: var(--spacing-xs);
+}
+
+.logo {
+  height: 20px;
+}
+
+.CTAWrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: var(--spacing-xs);
+}
+
+.heroCTA {
+  border: none;
+  background-color: var(--color-black);
+  color: #fff;
+  font-family: "arial";
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 170px;
+  height: 50px;
+}

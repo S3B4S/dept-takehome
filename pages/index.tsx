@@ -1,6 +1,5 @@
 import type { NextPage } from "next"
 import Head from "next/head"
-import Image from "next/image"
 import { getCases, getClients, getReviews } from "../utils/api"
 import { Cases, Clients, ContactForm, Footer, Hero } from "../components"
 import styles from "../styles/Home.module.css"
@@ -14,7 +13,7 @@ interface HomeProps {
 
 const Home: NextPage<HomeProps> = ({ cases, clients, review }) => {
   return (
-    <div>
+    <div className={styles.main}>
       <Head>
         <title>Dept</title>
         <meta name="description" content="Dept agency" />
