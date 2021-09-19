@@ -17,7 +17,7 @@ export interface Review extends APIData {
   review: string
 }
 
-export interface Case extends APIData {
+export interface ClientCase extends APIData {
   title: string
   cover_image: string
   client: string

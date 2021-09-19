@@ -16,7 +16,7 @@
 }
 
 .nav {
-  border-bottom: 1px var(--color-black) solid;
+  border-bottom: 1px var(--color-black-100) solid;
   margin-top: var(--spacing-s);
   display: flex;
   justify-content: space-between;
@@ -47,7 +47,7 @@
 
 .heroCTA {
   border: none;
-  background-color: var(--color-black);
+  background-color: var(--color-black-100);
   color: #fff;
   font-family: "arial";
   font-weight: bold;

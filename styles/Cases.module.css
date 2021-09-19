@@ -1,0 +1,35 @@
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-l);
+}
+
+.cases {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.highlightedCase {
+  width: 65%;
+  margin-right: var(--spacing-xs);
+}
+
+.smallCases {
+  width: 35%;
+  height: 500px;
+}
+
+.smallCases section {
+  height: 50%;
+  border-top: 1px solid var(--color-grey-900);
+  margin: 0;
+}
+
+.smallCases section:last-of-type {
+  border-bottom: 1px solid var(--color-grey-900);
+}
+
+.reversed {
+  margin-right: 0;
+  margin-left: var(--spacing-xs);
+}

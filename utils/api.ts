@@ -1,4 +1,4 @@
-import { Case, Client, Review } from "../@types"
+import { ClientCase, Client, Review } from "../@types"
 
 const BASE_URL = "https://api.buttercms.com/v2/content"
 
@@ -9,7 +9,7 @@ export async function getClients(): Promise<{ data: { clients: Client[] }}> {
   return res.json()
 }
 
-export async function getCases(): Promise<{ data: { cases: Case[] }}> {
+export async function getCases(): Promise<{ data: { cases: ClientCase[] }}> {
   const res = await fetch(urlFromPath("/cases"))
   return res.json()
 }
