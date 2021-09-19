@@ -1,17 +1,20 @@
 import type { NextPage } from "next"
 import Head from "next/head"
-import { getCases, getClients, getReviews } from "../utils/api"
+import { getCases, getCategories, getClients, getIndustries, getReviews } from "../utils/api"
 import { Cases, Clients, ContactForm, Footer, Hero } from "../components"
 import styles from "../styles/Home.module.css"
-import { APIData, ClientCase, Client, ClientReview } from "../@types"
+import { APIData, ClientCase, Client, ClientReview, Industry, Category } from "../@types"
 
+// @TODO inherit from getStaticProps
 interface HomeProps {
   cases: ClientCase[]
   clients: Client[]
   review: ClientReview
+  industries: Industry[]
+  categories: Category[]
 }
 
-const Home: NextPage<HomeProps> = ({ cases, clients, review }) => {
+const Home: NextPage<HomeProps> = ({ cases, clients, review, industries, categories }) => {
   return (
     <div className={styles.main}>
       <Head>
@@ -20,7 +23,7 @@ const Home: NextPage<HomeProps> = ({ cases, clients, review }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero/>
-      <Cases cases={cases} review={review}/>
+      <Cases cases={cases} review={review} industries={industries} categories={categories}/>
       <Clients clients={clients}/>
       <ContactForm/>
       <Footer/>
@@ -36,6 +39,8 @@ export async function getStaticProps() {
   const { data: { cases } } = await getCases()
   const { data: { clients }} = await getClients()
   const { data: { reviews }} = await getReviews()
+  const { data: { industries }} = await getIndustries()
+  const { data: { categories }} = await getCategories()
   
   return {
     props: {
@@ -46,6 +51,8 @@ export async function getStaticProps() {
       cases: cases.sort(sortByOrderInc).slice(0, 18),
       clients: clients.sort(sortByOrderInc),
       review: reviews[0],
+      industries,
+      categories,
     }
   }
 }

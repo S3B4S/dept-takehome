@@ -21,4 +21,14 @@ export interface ClientCase extends APIData {
   title: string
   cover_image: string
   client: string
+  category: Category
+  industry: Industry
+}
+
+export interface Category extends APIData {
+  category: string
+}
+
+export interface Industry extends APIData {
+  industry: string
 }

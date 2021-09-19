@@ -1,5 +1,6 @@
 .hero {
   margin: var(--spacing-xs);
+  margin-bottom: 0;
   background: url("/images/header.jpg") no-repeat;
   background-size: 100%;
   font-family: "teko";
