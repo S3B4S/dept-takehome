@@ -52,8 +52,8 @@ const filterToPairs = (industry: string, category: string, cases: ClientCase[]):
 }
 
 const Cases = ({ cases, review, categories, industries }: CasesProps) => {
-  const [category, setCategory] = useState('')
-  const [industry, setIndustry] = useState('')
+  const [category, setCategory] = useState("")
+  const [industry, setIndustry] = useState("")
 
   const handleCategoryChange = (event: ChangeEvent<HTMLSelectElement>) => {
     setCategory(event.target.value)
