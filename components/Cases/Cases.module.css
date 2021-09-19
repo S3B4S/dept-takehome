@@ -28,6 +28,10 @@
   margin-right: var(--spacing-xs);
 }
 
+.regularRow section {
+  width: 50%;
+}
+
 .cases {
   width: 90%;
   margin: 0 auto;
