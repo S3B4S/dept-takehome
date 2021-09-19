@@ -1,4 +1,4 @@
-import { Case } from "../types"
+import { Case } from "../@types"
 
 interface CasesProps {
   cases?: Case[]

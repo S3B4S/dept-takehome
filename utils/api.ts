@@ -1,4 +1,4 @@
-import { Case, Client, Review } from "./types"
+import { Case, Client, Review } from "../@types"
 
 const BASE_URL = "https://api.buttercms.com/v2/content"
 

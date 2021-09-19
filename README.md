@@ -1,7 +1,7 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Dept take home
+My submission for the Dept take home, using Next.JS and ButterCMS.
 
 ## Getting Started
-
 First, run the development server:
 
 ```bash
@@ -12,23 +12,45 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Technologies involved
+- [TypeScript](https://www.typescriptlang.org/)
+- [React](https://reactjs.org/)
+- [Next.JS](https://nextjs.org/)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- [Netlify](https://www.netlify.com/)
+- [ButterCMS](https://buttercms.com/)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Reasoning
+Looking at the pages design I derived the following assumptions;
+1. No user dependent context on the page
+2. Cases might be added and/or reordered
+3. Content gets updated somewhat infrequently
 
-## Learn More
+Looking at this, I find that two pieces of technology make sense here, a CMS and SSG (static site generation). The CMS is there so that given teams, such a marketing, can easily edit the content in a friendly manner and since there is no user dependent state we can statically generate our sites whenever the CMS gets updated. A regular react SPA wouldn't have made much sense, since all of the requests would be the same.
 
-To learn more about Next.js, take a look at the following resources:
+Previously, I have used Gatsby + Netlify CMS, which was quite pleasant, but I wanted to try something new, hence I opted to use Next.JS. The next step is to choose a CMS, we should first look at what our data might look like:
+```md
+- Cases
+  - Title
+  - Cover image
+  - Company
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Clients
+  - Name
+  - Logo
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Reviews
+  - Review
+  - Reviewer
+  - Role
+  - Company
+```
 
-## Deploy on Vercel
+I do not expect the site to make a lot of varying requests, as well as the shape of the data would match the potential general purpose REST api (`/cases` for all cases, `/clients` for all clients etc.). We also will need to upload images to use for the covers. Thus our CMS will have the following two requirements;
+1. Make content available through REST endpoints
+2. Be able to upload images
+3. All of this available in the free tier
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+My eyes then fell upon ButterCMS, which I had also heard of previously and did satisfy above requirements.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Deployment will be done on Netlify, so whenever content gets published in ButterCMS it should trigger Netlify to initiate the build process and deploy the newly generated static sites. This can be done through the [webhooks of ButterCMS](https://buttercms.com/docs/api/#webhooks) and the [build hooks from Netlify](https://docs.netlify.com/configure-builds/build-hooks/).
