@@ -39,10 +39,6 @@
   margin-right: var(--spacing-xs);
 }
 
-.logo {
-  height: 20px;
-}
-
 .CTAWrapper {
   display: flex;
   justify-content: flex-end;
