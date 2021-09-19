@@ -1,12 +1,18 @@
 import type { NextPage } from "next"
 import Head from "next/head"
 import Image from "next/image"
-import { getCases } from "../utils/api"
-import { Cases } from "../components/Cases"
+import { getCases, getClients, getReviews } from "../utils/api"
+import { Cases, Clients, ContactForm, Footer, Hero } from "../components"
 import styles from "../styles/Home.module.css"
-import { Case } from "../@types"
+import { APIData, Case, Client, Review } from "../@types"
 
-const Home: NextPage = (props) => {
+interface HomeProps {
+  cases: Case[]
+  clients: Client[]
+  review: Review
+}
+
+const Home: NextPage<HomeProps> = ({ cases, clients, review }) => {
   return (
     <div>
       <Head>
@@ -14,23 +20,33 @@ const Home: NextPage = (props) => {
         <meta name="description" content="Dept agency" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      Cases:
-      <Cases cases={(props as any).cases} />
+      <Hero/>
+      <Cases cases={cases} review={review}/>
+      <Clients clients={clients}/>
+      <ContactForm/>
+      <Footer/>
     </div>
   )
 }
 
 export default Home
 
-const sortByOrderInc = (a: Case, b: Case): number => a.order - b.order
+const sortByOrderInc = (a: APIData, b: APIData): number => a.order - b.order
 
 export async function getStaticProps() {
-  const { data } = await getCases()
+  const { data: { cases } } = await getCases()
+  const { data: { clients }} = await getClients()
+  const { data: { reviews }} = await getReviews()
   
   return {
     props: {
       // Order based on order field, incrementing
-      cases: data.cases.sort(sortByOrderInc),
+      // and only grab the first 18 entries for cases
+      // usually this should be done through the API,
+      // but looks like ButterCMS does not support ordering numerically, only lexicographically.
+      cases: cases.sort(sortByOrderInc).slice(0, 18),
+      clients: clients.sort(sortByOrderInc),
+      review: reviews[0],
     }
   }
 }
