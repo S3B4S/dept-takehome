@@ -1,3 +1,62 @@
 .contact-form {
-  
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  margin-top: var(--spacing-l)
+}
+
+.contact-form-label {
+  font-family: Teko;
+  font-size: 60px;
+  line-height: 60px;
+  color: var(--color-black-100);
+  width: 40%;
+}
+
+.contact-form form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-form form div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-xs);
+  padding-top: 0;
+}
+
+.contact-form form label {
+  font-family: Arial;
+  font-size: 15px;
+  color: var(--color-black-200);
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contact-form form input, .contact-form form textarea {
+  border: none;
+  border-bottom: 1px solid var(--color-grey-900);
+}
+
+.contact-form form input {
+  height: 50px;
+}
+
+.contact-form form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  border: none;
+  margin: var(--spacing-xs);
+  padding: calc(var(--spacing-xs) - 10px);
+  font-family: Arial;
+  font-size: 15px;
+  color: #FFF;
+  text-align: center;
+  line-height: 30px;
+  background-color: var(--color-blue-500);
+  text-transform: uppercase;
+  width: 150px;
 }
