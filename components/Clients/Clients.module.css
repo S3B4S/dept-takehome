@@ -43,3 +43,34 @@
   object-fit: cover;
   margin: var(--spacing-xs);
 }
+
+@media (max-width: 800px) {
+  .clients h1 {
+    font-size: 30px;
+    line-height: 32px;
+  }
+
+  .clients p {
+    width: 90%;
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .logos-wrapper img {
+    display: none;
+  }
+
+  .logos-wrapper {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, 150px);
+    width: 100%;
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .logos-wrapper img:nth-child(-n+6) {
+    display: unset;
+  }
+
+  .logos-wrapper img {
+    width: 50%;
+  }
+}
