@@ -1,4 +1,5 @@
 import styles from "./Footer.module.css"
+import socials from "../../assets/socials.json"
 
 const Footer = () => {
   return (
@@ -14,9 +15,9 @@ const Footer = () => {
           <li>Contact</li>
         </ul>
         <ul className={styles.social}>
-          <li><a href="https://www.facebook.com/DeptAgency/"><img src="/icons/icon-fb-white.svg" alt="Facebook"/></a></li>
-          <li><a href="https://twitter.com/deptagency"><img src="/icons/icon-twitter-white.svg" alt="Twitter"/></a></li>
-          <li><a href="https://www.instagram.com/deptagency"><img src="/icons/icon-instagram-white.svg" alt="Instagram"/></a></li>
+          <li><a href={socials.facebook.url}><img src="/icons/icon-fb-white.svg" alt="Facebook"/></a></li>
+          <li><a href={socials.twitter.url}><img src="/icons/icon-twitter-white.svg" alt="Twitter"/></a></li>
+          <li><a href={socials.linkedin.url}><img src="/icons/icon-instagram-white.svg" alt="Instagram"/></a></li>
         </ul>
         <div className={styles["footer-border"]}></div>
         <ul className={styles.legality}>

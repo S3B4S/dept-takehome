@@ -1,9 +1,10 @@
 import type { NextPage } from "next"
 import Head from "next/head"
 import { getCases, getCategories, getClients, getIndustries, getReviews } from "../utils/api"
-import { Cases, Clients, ContactForm, Footer, Hero } from "../components"
+import { Cases, Clients, ContactForm, Footer, Hero, Menu } from "../components"
 import styles from "../styles/Home.module.css"
 import { APIData, ClientCase, Client, ClientReview, Industry, Category } from "../@types"
+import { useState } from "react"
 
 // @TODO inherit from getStaticProps
 interface HomeProps {
@@ -15,14 +16,20 @@ interface HomeProps {
 }
 
 const Home: NextPage<HomeProps> = ({ cases, clients, review, industries, categories }) => {
+  const [menuIsShown, setMenuShown] = useState(false)
+
+  const showMenu = () => { setMenuShown(true) }
+  const closeMenu = () => { setMenuShown(false) }
+
   return (
     <div className={styles.main}>
+      {menuIsShown && <Menu onMenuClose={closeMenu}/>}
       <Head>
         <title>Dept</title>
         <meta name="description" content="Dept agency" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Hero/>
+      <Hero onMenuClick={showMenu}/>
       <Cases cases={cases} review={review} industries={industries} categories={categories}/>
       <Clients clients={clients}/>
       <ContactForm/>

@@ -1,0 +1,18 @@
+{
+  "twitter": {
+    "label": "Twitter",
+    "url": "https://twitter.com/deptagency"
+  },
+  "facebook": {
+    "label": "Facebook",
+    "url": "https://www.facebook.com/DeptAgency/"
+  },
+  "instagram": {
+    "label": "Instagram",
+    "url": "https://www.instagram.com/deptagency"
+  },
+  "linkedin": {
+    "label": "Linkedin",
+    "url": "https://www.linkedin.com/company/deptagency/"
+  }
+}

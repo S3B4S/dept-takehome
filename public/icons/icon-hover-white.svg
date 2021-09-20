@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="36px" viewBox="0 0 28 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Triangle</title>
+    <g id="Dept-–-(Front-End-Assignment)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dept-Menu-Desktop" transform="translate(-1068.000000, -195.000000)" fill="#FFFFFF">
+            <g id="Menu-Items" transform="translate(955.000000, 167.000000)">
+                <polygon id="Triangle" transform="translate(127.000000, 46.000000) rotate(-360.000000) translate(-127.000000, -46.000000) " points="113 64 141 45.9811928 113 28"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
