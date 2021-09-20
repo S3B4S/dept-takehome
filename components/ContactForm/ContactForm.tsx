@@ -1,6 +1,8 @@
+import styles from "./ContactForm.module.css"
+
 const ContactForm = () => {
   return (
-    <section>
+    <section className={styles["contact-form"]}>
       ContactForm
     </section>
   )

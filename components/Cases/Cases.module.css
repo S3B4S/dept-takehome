@@ -24,11 +24,11 @@
   line-height: 32px;
 }
 
-.regularRow section:first-child {
+.regular-row section:first-child {
   margin-right: var(--spacing-xs);
 }
 
-.regularRow section {
+.regular-row section {
   width: 50%;
 }
 
@@ -37,17 +37,17 @@
   margin: 0 auto;
 }
 
-.highlightedCase {
+.highlighted-case {
   width: 65%;
   margin-right: var(--spacing-xs);
 }
 
-.smallCases {
+.small-cases {
   width: 35%;
   height: 600px;
 }
 
-.smallCases section {
+.small-cases section {
   height: 50%;
   border-top: 1px solid var(--color-grey-900);
   margin: 0;

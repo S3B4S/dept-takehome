@@ -31,22 +31,22 @@
   text-transform: uppercase;
 }
 
-.navItems {
+.nav-items {
   margin-bottom: -10px;
 }
 
-.menuLabel {
+.menu-label {
   text-transform: uppercase;
   margin-right: var(--spacing-xs);
 }
 
-.CTAWrapper {
+.CTA-wrapper {
   display: flex;
   justify-content: flex-end;
   margin-bottom: var(--spacing-xs);
 }
 
-.heroCTA {
+.CTA {
   border: none;
   background-color: var(--color-black-100);
   color: #fff;

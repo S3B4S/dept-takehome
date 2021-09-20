@@ -14,7 +14,7 @@ interface CasesProps {
 // Shows 2 cases side by side
 const RegularRow = ({ cases }: { cases: ClientCase[] }) => {
   return (
-    <div className={styles.row + " " + styles.regularRow}>
+    <div className={styles.row + " " + styles["regular-row"]}>
       {cases[0] && <Case clientCase={cases[0]}/>}
       {cases[1] && <Case clientCase={cases[1]}/>}
     </div>
@@ -24,12 +24,12 @@ const RegularRow = ({ cases }: { cases: ClientCase[] }) => {
 // Shows 1 case highlighted with 2 small casses in a column
 // can be reversed
 const HighlightedCaseRow = ({ cases, reverse = false }: { cases: ClientCase[], reverse?: boolean }) => {
-  const HighlightedCase = <Case clientCase={cases[0]} className={styles.highlightedCase + (reverse ? " " + styles.reversed : "")}/>
+  const HighlightedCase = <Case clientCase={cases[0]} className={styles["highlighted-case"] + (reverse ? " " + styles.reversed : "")}/>
   
   return (
     <div className={styles.row}>
       {!reverse && HighlightedCase}
-      <div className={styles.smallCases}>
+      <div className={styles["small-cases"]}>
         <Case clientCase={cases[1]} showCover={false}/>
         <Case clientCase={cases[2]} showCover={false}/>
       </div>
