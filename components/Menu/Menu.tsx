@@ -33,8 +33,9 @@ const Menu = ({ onMenuClose }: { onMenuClose: () => void }) => {
           </ul>
         </div>
         <ul className={styles.socials}>
-          {Object.values(socials).map(social => (
-            <li>
+          {Object.values(socials).map((social, i) => (
+            <li key={i}>
+              {/* The items won't get reordered, so using index is okay */}
               <a href={social.url}>{social.label}</a>
             </li>
           ))}
