@@ -16,7 +16,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - [TypeScript](https://www.typescriptlang.org/)
 - [React](https://reactjs.org/)
 - [Next.JS](https://nextjs.org/)
-
 - [Netlify](https://www.netlify.com/)
 - [ButterCMS](https://buttercms.com/)
 
