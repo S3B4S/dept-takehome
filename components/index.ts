@@ -1,6 +1,6 @@
 export { default as Clients } from "./Clients/Clients"
 export { default as Cases } from "./Cases/Cases"
 export { default as ContactForm } from "./ContactForm/ContactForm"
-export { default as Footer } from "./Footer"
+export { default as Footer } from "./Footer/Footer"
 export { default as Hero } from "./Hero/Hero"
 export { default as Review } from "./Review/Review"
