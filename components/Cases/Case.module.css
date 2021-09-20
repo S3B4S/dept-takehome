@@ -35,3 +35,9 @@
 .case-cover {
   object-fit: cover;
 }
+
+@media (max-width: 700px) {
+  .case {
+    margin: 0;
+  }
+}

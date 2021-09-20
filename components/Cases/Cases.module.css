@@ -77,3 +77,55 @@
     display: unset;
   }
 }
+
+@media (max-width: 700px) {
+  /* Resetting the styles */
+  .regular-row {
+    flex-direction: column;
+  }
+
+  .regular-row section {
+    width: unset;
+  }
+
+  .row {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .highlighted-case {
+    width: unset;
+    margin: 0;
+  }
+
+  .row .small-cases {
+    width: unset;
+    height: unset;
+    margin: 0;
+  }
+
+  .regular-row section:first-child {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  /* Apply the styles we want for tablet/mobile */
+  .regular-row section {
+    margin-top: var(--spacing-l);
+  }
+
+  .highlighted-case {
+    margin-top: var(--spacing-l);
+  }
+
+  .small-cases section {
+    margin-top: var(--spacing-s);
+    margin-bottom: var(--spacing-s);
+    padding-top: var(--spacing-s);
+    padding-bottom: var(--spacing-s);
+  }
+
+  .cases {
+    margin-bottom: var(--spacing-m);
+  }
+}

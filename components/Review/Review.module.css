@@ -35,3 +35,21 @@
   text-align: left;
   line-height: 30px;
 }
+
+@media (max-width: 700px) {
+  .review {
+    margin-top: var(--spacing-m);
+  }
+
+  .container {
+    width: unset;
+    padding-top: var(--spacing-m);
+    margin-bottom: 0;
+  }
+
+  .quote {
+    font-size: 24px;
+    text-align: left;
+    line-height: 30px;
+  }
+}
