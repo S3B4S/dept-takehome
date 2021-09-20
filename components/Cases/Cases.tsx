@@ -93,7 +93,7 @@ const Cases = ({ cases, review, categories, industries }: CasesProps) => {
       {
         // If filters have been applied
         (category || industry)
-          ? filterToPairs(industry, category, cases).map((pair) => <RegularRow key={pair[0].meta.id + pair[1]?.meta?.id} cases={pair} />)
+          ? filterToPairs(industry, category, cases).map((pair) => <RegularRow key={pair[0]?.meta?.id + pair[1]?.meta?.id} cases={pair} />)
           : <>
               <RegularRow cases={cases.slice(0,2)} />
               <RegularRow cases={cases.slice(2,4)} />
