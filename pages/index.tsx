@@ -56,7 +56,7 @@ export async function getStaticProps() {
       // usually this should be done through the API,
       // but looks like ButterCMS does not support ordering numerically, only lexicographically.
       cases: cases.sort(sortByOrderInc).slice(0, 18),
-      clients: clients.sort(sortByOrderInc),
+      clients: clients.sort(sortByOrderInc).slice(0, 16),
       review: reviews[0],
       industries,
       categories,
