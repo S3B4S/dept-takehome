@@ -61,3 +61,19 @@
   margin-right: 0;
   margin-left: var(--spacing-xs);
 }
+
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .filter {
+    margin-top: var(--spacing-xs);
+    text-align: left;
+    line-height: 4.5rem;
+  }
+
+  .mobile-only {
+    display: unset;
+  }
+}

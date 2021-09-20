@@ -100,6 +100,7 @@
   .CTA {
     width: 100%;
     margin: var(--spacing-s);
+    margin-bottom: 0;
   }
 }
 

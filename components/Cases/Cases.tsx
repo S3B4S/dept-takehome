@@ -88,7 +88,7 @@ const Cases = ({ cases, review, categories, industries }: CasesProps) => {
   return (
     <section className={styles.cases}>
       <div className={styles.filter}>
-        Show me {CategoriesDropdown} in {IndustryDropdown}
+        Show me {CategoriesDropdown} <br className={styles["mobile-only"]}/> in {IndustryDropdown}
       </div>
       {
         // If filters have been applied
