@@ -27,19 +27,28 @@
 }
 
 .callout {
-  font-size: 24rem;
+  font-size: 22rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   font-family: Teko-Regular;
   text-transform: uppercase;
 }
 
 .nav-items {
-  margin-bottom: -10px;
+  margin-bottom: -7px;
   cursor: pointer;
+}
+
+.nav-items div:first-of-type {
+  margin-bottom: 2px;
 }
 
 .menu-label {
   text-transform: uppercase;
   margin-right: var(--spacing-xs);
+  font-family: Teko-Regular;
+  font-size: 24px;
+  line-height: 24px;
 }
 
 .CTA-wrapper {
@@ -63,6 +72,18 @@
   display: none;
 }
 
+@media (max-width: 1200px) {
+  .callout {
+    font-size: 16rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .callout {
+    font-size: 14rem;
+  }
+}
+
 @media (max-width: 800px) {
   .container {
     display: grid;
@@ -78,7 +99,7 @@
   }
 
   .nav-items {
-    margin-bottom: 0;
+    margin-bottom: -8px;
   }
 
   .container .callout {
@@ -94,7 +115,7 @@
   }
   
   .callout {
-    font-size: 20rem;
+    font-size: 12rem;
   }
 
   .CTA {
@@ -106,13 +127,13 @@
 
 @media (max-width: 650px) {
   .callout {
-    font-size: 16rem;
+    font-size: 10rem;
   }
 }
 
 @media (max-width: 550px) {
   .callout {
-    font-size: 12rem;
+    font-size: 8rem;
   }
 }
 
