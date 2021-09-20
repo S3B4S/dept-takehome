@@ -1,5 +1,5 @@
 # Dept take home
-My submission for the Dept take home, using Next.JS and ButterCMS.
+My submission for the Dept take home, using Netlify, Next.JS and ButterCMS.
 
 ## Getting Started
 First, run the development server:
