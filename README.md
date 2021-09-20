@@ -20,9 +20,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - [Netlify](https://www.netlify.com/)
 - [ButterCMS](https://buttercms.com/)
 
-## Description
-
-## Reasoning
+## Description & reasoning
 Looking at the pages design I derived the following assumptions;
 1. No user dependent context on the page
 2. Cases might be added and/or reordered
@@ -62,6 +60,8 @@ So, all in all, we are using
 - ButterCMS for the content
 - Next.JS for statically generating the sites
 - Netlify for hosting and the building pipeline
+
+![dept-takehome-graph](https://user-images.githubusercontent.com/17083334/134090311-4c2e601f-049f-4076-a28c-5430345faf7f.png)
 
 ## Potential improvements
 If I had more time, these are the main things I'd have wanted to improve:
