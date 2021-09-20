@@ -1,3 +1,38 @@
+@font-face {
+  font-family: Teko-Bold;
+  src: url("/fonts/Teko/Teko-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Teko-Light;
+  src: url("/fonts/Teko/Teko-Light.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Teko-Medium;
+  src: url("/fonts/Teko/Teko-Medium.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Teko-Regular;
+  src: url("/fonts/Teko/Teko-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Teko-SemiBold;
+  src: url("/fonts/Teko/Teko-SemiBold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --spacing-xs: 20px;
   --spacing-s: 30px;

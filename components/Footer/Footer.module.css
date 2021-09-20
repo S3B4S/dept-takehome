@@ -32,7 +32,7 @@
 .links {
   grid-area: links;
   display: flex;
-  font-family: Teko;
+  font-family: Teko-Light;
   font-size: 18px;
   color: #fff;
   text-align: left;
@@ -91,7 +91,7 @@
   display: flex;
   justify-content: center;
   color: var(--color-blue-500);
-  font-family: Teko;
+  font-family: Teko-Regular;
   font-size: 22px;
   text-align: center;
   line-height: 32px;

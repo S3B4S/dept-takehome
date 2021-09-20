@@ -3,7 +3,7 @@
   margin-bottom: 0;
   background: url("/images/header.jpg") no-repeat;
   background-size: 100%;
-  font-family: Teko;
+  font-family: Teko-Regular;
 }
 
 .container {
@@ -27,7 +27,7 @@
 
 .callout {
   font-size: 24rem;
-  font-family: Teko;
+  font-family: Teko-Regular;
   text-transform: uppercase;
 }
 
