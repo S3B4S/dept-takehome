@@ -1,7 +1,5 @@
 import styles from "./Footer.module.css"
-import DeptLogo from "../../public/icons/favicon.svg"
 
-console.log(DeptLogo)
 const Footer = () => {
   return (
     <footer className={styles.footer}>
@@ -28,7 +26,12 @@ const Footer = () => {
         </ul>
         <span className={styles.copyright}>&copy; 2018 Dept Agency</span>
       </div>
-      <div className={styles["scroll-top"]}></div>
+      <div className={styles["scroll-top"]}>
+        <a href="#">
+          <img src="/icons/icon-scroll-to-top-blue.svg" alt="scroll to top" />
+          TOP
+        </a>
+      </div>
     </footer>
   )
 }

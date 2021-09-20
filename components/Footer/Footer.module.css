@@ -86,3 +86,24 @@
   height: 1px;
   border-bottom: 1px solid grey;
 }
+
+.scroll-top {
+  display: flex;
+  justify-content: center;
+  color: var(--color-blue-500);
+  font-family: Teko;
+  font-size: 22px;
+  text-align: center;
+  line-height: 32px;
+}
+
+.scroll-top a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-top a img {
+  width: 1.2rem;
+}
