@@ -1,4 +1,4 @@
-export { default as Clients } from "./Clients"
+export { default as Clients } from "./Clients/Clients"
 export { default as Cases } from "./Cases/Cases"
 export { default as ContactForm } from "./ContactForm"
 export { default as Footer } from "./Footer"

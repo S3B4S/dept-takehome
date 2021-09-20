@@ -5,7 +5,7 @@
 }
 
 .name {
-  font-family: "Arial";
+  font-family: Arial;
   font-weight: bold;
   font-size: 15px;
   color: var(--color-grey-700);
@@ -15,7 +15,7 @@
 }
 
 .title {
-  font-family: "Teko";
+  font-family: Teko;
   font-size: 30px;
   color: var(--color-black-200);
   line-height: 32px;
@@ -23,7 +23,7 @@
 }
 
 .open {
-  font-family: "Arial";
+  font-family: Arial;
   font-weight: bold;
   font-size: 14px;
   color: var(--color-blue-500); 

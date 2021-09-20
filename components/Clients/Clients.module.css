@@ -1,0 +1,45 @@
+.clients {
+  background-color: var(--color-blue-900);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clients h1 {
+  font-family: Teko;
+  font-weight: 100;
+  font-size: 60px;
+  color: var(--color-black-100);
+  line-height: 60px;
+  text-transform: uppercase;
+  margin-top: var(--spacing-l);
+  margin-bottom: var(--spacing-xs);
+}
+
+.clients p {
+  width: 50%;
+  font-family: Arial;
+  font-weight: lighter;
+  font-size: 17px;
+  color: var(--color-black-100);
+  text-align: center;
+  line-height: 27px;
+  margin-top: 0;
+  margin-bottom: var(--spacing-l);
+}
+
+.logosWrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(4, 150px);
+  margin-bottom: var(--spacing-xl);
+}
+
+.clientLogo {
+  align-self: center;
+  justify-self: center;
+  object-fit: cover;
+  margin: var(--spacing-xs);
+}
