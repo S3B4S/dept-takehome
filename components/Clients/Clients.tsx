@@ -1,6 +1,5 @@
 import { Client } from "../../@types"
 import styles from "./Clients.module.css"
-import Image from "next/image"
 
 const Clients = ({ clients }: { clients: Client[] }) => {
   return (
