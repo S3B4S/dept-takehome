@@ -4,7 +4,7 @@ const ContactForm = () => {
   return (
     <section className={styles["contact-form"]}>
       <span className={styles["contact-form-label"]}>
-        Questions?<br/>
+        Questions? <br/>
         We are here to help!
       </span>
       <form action="">
@@ -20,7 +20,7 @@ const ContactForm = () => {
           <label htmlFor="message">Message</label>
           <textarea id="message" name="message" required/>
         </div>
-        <div></div>
+        <div className={styles["hidden-div"]}></div>
         <button>Send</button>
       </form>
     </section>

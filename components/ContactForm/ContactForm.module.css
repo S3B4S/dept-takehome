@@ -62,3 +62,47 @@
   text-transform: uppercase;
   width: 150px;
 }
+
+@media (max-width: 800px) {
+  .contact-form {
+    flex-direction: column;
+    margin-top: var(--spacing-m);
+  }
+
+  .contact-form-label {
+    width: initial;
+    font-size: 30px;
+    text-align: center;
+    line-height: 32px;
+  }
+
+  .contact-form-label br {
+    display: none;
+  }
+
+  .contact-form form {
+    flex-direction: column;
+  }
+
+  .contact-form form div {
+    width: initial;
+    padding: 0;
+  }
+
+  .contact-form form div:first-child {
+    padding-top: var(--spacing-s);
+  }
+
+  .contact-form form div:not(:first-child) {
+    padding-top: var(--spacing-xs);
+  }
+
+  .contact-form button {
+    margin: 0;
+    margin-top: var(--spacing-s);
+  }
+
+  .contact-form .hidden-div {
+    display: none;
+  }
+}
