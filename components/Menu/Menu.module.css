@@ -46,6 +46,7 @@
   margin-bottom: var(--spacing-xs);
   display: flex;
   justify-content: flex-end;
+  cursor: pointer;
 }
 
 .menu-items li:not(:last-child) {
