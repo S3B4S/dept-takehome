@@ -109,6 +109,10 @@
     margin-left: 0;
   }
 
+  .filter {
+    margin-bottom: 0;
+  }
+
   /* Apply the styles we want for tablet/mobile */
   .regular-row section {
     margin-top: var(--spacing-l);
@@ -123,6 +127,10 @@
     margin-bottom: var(--spacing-s);
     padding-top: var(--spacing-s);
     padding-bottom: var(--spacing-s);
+  }
+  
+  .regular-row section:first-of-type {
+    margin-top: var(--spacing-m);  
   }
 
   .cases {
