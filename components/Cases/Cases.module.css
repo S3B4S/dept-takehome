@@ -126,6 +126,9 @@
     margin-top: var(--spacing-s);
     margin-bottom: var(--spacing-s);
     padding-top: var(--spacing-s);
+  }
+  
+  .small-cases section:last-of-type {
     padding-bottom: var(--spacing-s);
   }
   

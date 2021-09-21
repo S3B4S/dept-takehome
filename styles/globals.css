@@ -34,6 +34,7 @@
 }
 
 :root {
+  --spacing-xxs: 10px;
   --spacing-xs: 20px;
   --spacing-s: 30px;
   --spacing-m: 60px;

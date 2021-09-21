@@ -66,6 +66,7 @@
   text-transform: uppercase;
   width: 170px;
   height: 50px;
+  cursor: pointer;
 }
 
 .mobile-hero {

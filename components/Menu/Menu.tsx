@@ -12,24 +12,24 @@ const Menu = ({ onMenuClose }: { onMenuClose: () => void }) => {
           </button>
         </div>
         <ul className={styles["menu-items"]}>
-          <li>Home</li>
-          <li>Werk</li>
-          <li>Over</li>
-          <li>Diensten</li>
-          <li>Partners</li>
-          <li>Stories</li>
-          <li>Vacatures</li>
+          <li><a>Home</a></li>
+          <li><a>Werk</a></li>
+          <li><a>Over</a></li>
+          <li><a>Diensten</a></li>
+          <li><a>Partners</a></li>
+          <li><a>Stories</a></li>
+          <li><a>Vacatures</a></li>
         </ul>
         <div className={styles.countries}>
           <h3>Landen</h3>
           <ul>
-            <li>Global</li>
-            <li className={styles.selected}>Nederland</li>
-            <li>United States</li>
-            <li>Ireland</li>
-            <li>United Kingdom</li>
-            <li>Deutschland</li>
-            <li>Schweiz</li>
+            <li><a>Global</a></li>
+            <li className={styles.selected}><a>Nederland</a></li>
+            <li><a>United States</a></li>
+            <li><a>Ireland</a></li>
+            <li><a>United Kingdom</a></li>
+            <li><a>Deutschland</a></li>
+            <li><a>Schweiz</a></li>
           </ul>
         </div>
         <ul className={styles.socials}>

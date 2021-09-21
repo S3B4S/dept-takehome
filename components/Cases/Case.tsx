@@ -9,7 +9,11 @@ const Case = ({ clientCase, showCover = true, className = "" }: { clientCase: Cl
       {showCover && <Image src={clientCase.cover_image} alt="" width="600px" height="600px" className={styles["case-cover"]}/>}
       <span className={styles.name}>{clientCase.client}</span>
       <span className={styles.title}>{clientCase.title}</span>
-      <span className={styles.open}>View case</span>
+      <div className={styles["open-wrapper"] + " " + styles["desktop-only"]}>
+        <a className={styles.open}>
+          <img src="/icons/icon-highlight-blue.svg" alt=""/>View case
+        </a>
+      </div>
     </section>
   )
 }

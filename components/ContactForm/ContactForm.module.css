@@ -61,6 +61,7 @@
   background-color: var(--color-blue-500);
   text-transform: uppercase;
   width: 150px;
+  cursor: pointer;
 }
 
 @media (max-width: 800px) {

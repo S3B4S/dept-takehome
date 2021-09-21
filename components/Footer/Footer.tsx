@@ -7,12 +7,12 @@ const Footer = () => {
       <div className={styles.info}>
         <img src="/icons/icon-dept-white.svg" alt="Dept logo" className={styles.logo}/>
         <ul className={styles.links}>
-          <li>Work</li>
-          <li>Service</li>
-          <li>Stories</li>
-          <li>About</li>
-          <li>Careers</li>
-          <li>Contact</li>
+          <li><a>Work</a></li>
+          <li><a>Service</a></li>
+          <li><a>Stories</a></li>
+          <li><a>About</a></li>
+          <li><a>Careers</a></li>
+          <li><a>Contact</a></li>
         </ul>
         <ul className={styles.social}>
           <li><a href={socials.facebook.url}><img src="/icons/icon-fb-white.svg" alt="Facebook"/></a></li>
@@ -21,9 +21,9 @@ const Footer = () => {
         </ul>
         <div className={styles["footer-border"]}></div>
         <ul className={styles.legality}>
-          <li><a href="">Chamber of Commerce: 63464101</a></li>
-          <li><a href="">VAT: NL 8552.47.502.B01</a></li>
-          <li><a href="">Terms and conditions</a></li>
+          <li><a>Chamber of Commerce: 63464101</a></li>
+          <li><a>VAT: NL 8552.47.502.B01</a></li>
+          <li><a>Terms and conditions</a></li>
         </ul>
         <span className={styles.copyright}>&copy; 2018 Dept Agency</span>
       </div>

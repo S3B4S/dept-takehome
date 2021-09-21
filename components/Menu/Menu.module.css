@@ -78,6 +78,10 @@
   top: 4rem;
 }
 
+.countries li a {
+  cursor: pointer;
+}
+
 .countries .selected::before {
   background-image: url("/icons/icon-hover-white.svg");
   height: 10px;
@@ -111,6 +115,11 @@
   .menu-items {
     font-size: 50px;
     line-height: 50px;
+  }
+
+  .menu-items li:hover::before {
+    transform: scale(0.5);
+    margin-bottom: 10px;
   }
 
   .countries {
