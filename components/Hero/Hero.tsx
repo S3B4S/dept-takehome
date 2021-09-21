@@ -12,9 +12,7 @@ const Hero = ({ onMenuClick }: { onMenuClick: () => void }) => {
             <Image src="/icons/icon-menu.svg" alt="Menu" height="10px" width="20px" />
           </a>
         </nav>
-
         <span className={styles.callout}>Work</span>
-
         <div className={styles["CTA-wrapper"]}>
           <button className={styles.CTA}>View case</button>
         </div>
