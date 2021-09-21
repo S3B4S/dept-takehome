@@ -1,6 +1,5 @@
 import styles from "./Hero.module.css"
 import Image from "next/image"
-import { useState } from "react"
 
 const Hero = ({ onMenuClick }: { onMenuClick: () => void }) => {  
   return (
