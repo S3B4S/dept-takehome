@@ -1,5 +1,5 @@
 # Dept take home
-My submission for the Dept take home, using Netlify, Next.JS and ButterCMS. A live preview of the site can be found at [here](https://serene-jackson-922a2f.netlify.app/)!
+My submission for the Dept take home, using Netlify, Next.JS and ButterCMS. A live preview of the site can be found [here](https://serene-jackson-922a2f.netlify.app/)!
 
 - [Getting Started](#getting-started)
 - [Technologies involved](#technologies-involved)
